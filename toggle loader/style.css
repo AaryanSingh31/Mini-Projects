@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: white;
+  transition: background 0.3s;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 1.5s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-inner {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg,
+    #ff6ec4,
+    #7873f5,
+    #4ade80,
+    #facc15,
+    #ff6ec4
+  );
+  transition: background 0.3s;
+}
+
+button.mode-btn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body.dark {
+  background: #111827;
+}
+
+body.dark .loader-inner {
+  background: conic-gradient(
+    from 180deg,
+    #bec2ba,
+    #4439c0,
+    #15803d,
+    #a16207,
+    #bec2ba
+  );
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
