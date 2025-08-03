@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="game-name">
+        <h1>SNAKE WATER GUN</h1>
+    </div>
+    <div class="instructions-container">
+        <h4 id="game-instructions">Game Instructions:</h4>
+      <ul>
+        <li>Snake Beats Water.</li>
+        <li>Water Beats Gun.</li>
+        <li>Gun Beats Snake.</li>
+      </ul>
+    </div>
+      <div class="wrapper">
+    <div class="img-container">
+        <div class="snake-img">
+            <img id="snakeId" src="snake.png" alt="Snake">
+        </div>
+        <div class="water-img">
+            <img id="waterId" src="water.png" alt="Water">
+        </div>
+        <div class="gun-img">
+            <img id="gunId" src="gun.png" alt="Gun">
+        </div>
+    </div>
+    <div class="score">
+        <h3>Your Score: <span id="your-score">0</span></h3>
+        <h3>Computer Score: <span id="computer-score">0</span></h3>
+        <div class="choice-container">
+            <h3>Your Choice:</h3>
+            <p id="player-choice">None</p>
+            <h3>Computer Choice:</h3>
+            <p id="computer-choice">None</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <div class="msg">
+            <p id="result-msg">Game Result</p>
+         </div>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
