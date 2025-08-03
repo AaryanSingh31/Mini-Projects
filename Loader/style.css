@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.loader {
+
+  width: 70px;
+  aspect-ratio: 1 / 1; 
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg,
+    #000000,
+    #000000,
+     #650707,
+     #840202,
+    #fff,
+    #fff
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 1.3s ease-in-out infinite;
+  z-index: 1;
+}
+
+.spinner {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 2;
+}
+.mode-btn {
+  margin-top: 10rem;
+}
+.btn {
+  border: 2px solid #7873f5;
+  height: 2em;
+  width: 8em;
+  border-radius: 1.5em;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #7873f5;
+  color: white;
+  transform: translateY(-2px);
+
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .change-color-loader {
+  animation: spin-dark 1.5s ease-in-out infinite !important;
+  background: conic-gradient(
+    from 180deg,
+    #be2c8a,
+    #4439c0,
+    #15803d,
+    #a16207,
+    #be2c8a
+  ) !important;
+  animation: none !important;
+}
+@keyframes spin-dark {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.change-color{
+  background-color: black;
+}
